@@ -1,0 +1,275 @@
+/*#######################*/
+/* GENERAL STRUCTURE CSS */
+/*#######################*/
+html { overflow-x:hidden; height:100%;  }
+html, body { font-family: 'Open Sans', sans-serif; height:100%; }
+html *::-webkit-scrollbar-track { border-left:1px solid #e8e8e7; background-color: #fff; }
+html *::-webkit-scrollbar { width: 9px; background-color: #fff; }
+html *::-webkit-scrollbar-thumb { background-color: #c5c3c0; border-radius:5px; }
+body { background:url(./../img/bg.png) repeat-x; }
+.p0 { padding:0px !important; }
+.p10 { padding:10px !important; }
+.p20 { padding:20px !important; }
+.tar { text-align:right !important; }
+.tal { text-align:left !important; }
+.tac { text-align:center !important; }
+@media screen and (max-width:992px) { .r-tac { text-align:center !important; } }
+* { outline:none; }
+.clear { clear:both; }
+h3.section-title { font-size:30px; margin-bottom:10px; }
+h5.section-subtitle { line-height:27px; padding-top:5px; }
+.go-item { cursor:pointer; }
+
+
+/*#######################*/
+/*	 HEADER CSS
+/*#######################*/
+header { border-bottom:8px solid #ddd7cd; z-index:9; position:relative; background:#fff; position:absolute; width:100%; height:88px; }
+header nav { text-align:right; }
+header nav .login-panel { display:inline-block; margin-left:70px; }
+header nav ul { list-style-type:none; display:inline-block; margin-top:10px; text-align:right; }
+header nav ul li { display:inline-block; line-height:60px; padding-left:20px; }
+header nav ul li a { color:#c77575; letter-spacing:0.02em; font-size:14px; font-weight:600; text-decoration:none !important; }
+header nav ul li a:hover { color:#000; }
+header img.logo { margin-top:15px; }
+form.login-form input { width:130px; height:40px; background:#f7f7f7; border:none; border-radius:7px; padding-left:10px; border-bottom:4px solid #e7e6e6; color:#9a9a9a; }
+form.login-form button { height:40px; background:#f7f7f7; border:none; border-radius:7px; padding-left:10px; padding-right:10px; color:#9a9a9a; border-bottom:4px solid #e7e6e6; }
+form.login-form button:hover { background:#fefefe; }
+
+
+/*#######################*/
+/*	 Map CSS
+/*#######################*/
+.filter-left { background:#f5eede !important; height:100%; padding:15px; margin-top:0px !important; z-index:1; }
+.filter-left .filter-input { width:100%; height:50px; line-height:50px; padding-left:15px; border:none; background:#fff; border-bottom:8px solid #ddd7cd; border-radius:15px; margin-bottom:10px; }
+@media screen and (max-width: 992px) {
+	.filter_result { background:#fff; border:10px; margin-top:15px; border-radius:10px; height:380px; overflow-y:scroll; }
+}
+@media screen and (min-width: 992px) {
+	.filter_result { background:#fff; border:10px; margin-top:15px; border-radius:10px; height:470px; overflow-y:scroll; }
+}
+.filter_result .result-title { font-size:16px; color:#646464; line-height:45px; }
+.filter_result .results .item { font-size:14px; line-height:50px; border-bottom:1px solid #ebeae9; clear:both; }
+.filter_result .results .item a { color:#333; font-weight:600; }
+.filter_result .results .item:hover { background:#eaeaea !important; }
+.table-hr { width:100%; height:1px; background:#c5c3c0; }
+@media screen and (min-width: 992px) {
+	.uk-img-preserve { margin-top:87px; }
+}
+@media screen and (max-width: 992px) {
+	.uk-img-preserve { margin-top:0px; }
+}
+
+
+/*###########################*/
+/*	 Page Content CSS
+/*###########################*/
+.filter-left h1 { font-size:30px; padding:0; margin:0; margin-bottom:20px; color:#483f29; letter-spacing:0.02em; }
+.filter-left .title-tools { margin-top:20px; margin-bottom:25px; }
+.filter-left .title-tools div { margin-top:7px; }
+.filter-left p { font-size:14px; color:#1c1911; letter-spacing:0.02em; line-height:25px; padding-left:3px; }
+.filter-left .description { height:500px; overflow-y:scroll; height:400px; }
+.comments { margin-top:40px; }
+.comments .comment-item { margin-top:30px; }
+.comments .comment-item .comment-title { font-size:15px; margin-bottom:5px; }
+.comment-write { margin-top:30px; padding:30px; }
+.company-image { width:calc(100% - 20px ); margin-bottom:30px; margin-right:20px; }
+.filter-left { margin-top:-88px; padding-top:103px; }
+
+@media screen and (min-width:992px) {
+	.uk-img-preserve { height:calc(100% - 88px) !important; }
+	.map-cont { height:100%; }
+}
+@media screen and (max-width:992px) {
+	.filter-left { }
+	.result-title, .table-hr { display:none; }
+	.uk-img-preserve { height:250px !important; }
+	.map-cont { height:250px; }
+	.filter_result .results .item { line-height:30px !important; }
+}
+
+/*###########################*/
+/*	 Repsonsive Menu CSS
+/*###########################*/
+@media screen and (min-width:1200px) {
+	.pc-hide { display:none; }
+	.md-hide { display:inline-block !important; }
+}
+@media screen and (max-width:1200px) {
+	.pc-hide { display:inline-block; }
+	.md-hide { display:none !important; }
+}
+.slicknav_menu { position: absolute; right:0; top:15px; }
+@media screen and (max-width:992px) {
+	.slicknav_menu { display:block !important; }
+	nav.top-menu { display:none !important; }
+	header nav ul li { padding-left:0; }
+}
+@media screen and (min-width:992px) {
+	.slicknav_menu { display:none !important; }
+	nav.top-menu { display:inline-block !important; }
+}
+.slicknav_nav ul { padding:10px; margin:0; }
+.slicknav_nav ul li { line-height:35px; width:100%; text-align:center; }
+.slicknav_nav ul li a { padding-left:50px; padding-right:50px; }
+@media screen and (max-width:390px) {
+	img.logo { width:200px; position:absolute; top:7px; }
+}
+
+
+
+/*###########################*/
+/*	 Featured Section CSS
+/*###########################*/
+.featured { margin-top:60px; }
+.featured .item-cont { margin-top:15px; }
+.featured .item-cont .item { background:#f6f6f6; padding:10px; margin-top:30px; text-align:center; }
+.featured .item-cont .comp-img { width:100%; }
+.featured .item-cont h3 { font-size:18px; color:#5c5345; }
+.featured .item-cont p { font-size:13px; color:#333; }
+.btn-comp-dtls { display:inline-block; font-size:13px; color:#e7e7e7; background:#8b7e67; line-height:35px; padding-left:15px; padding-right:15px; text-decoration:none; margin-top:10px; border:1px solid #8b7e67; }
+.btn-comp-dtls:hover { border:1px solid #8b7e67; background:#fff; color:#5c5345; text-decoration:none; }
+.item-cont > div:nth-child(4n+1) { clear:both; }
+@media screen and (max-width:992px) { .item-cont > div:nth-child(4n+3) { clear:both; } }
+
+
+/* ###############################################
+	IMAGE BACKGROUND SECTION CSS
+############################################### */
+.image-background-text { background:url(./../img/image-bg-text.jpg) center center; background-size: auto 100%; padding-top:60px; padding-bottom:60px; position:relative; z-index:0; margin-top:60px; }
+.image-background-text:before { z-index:-1; background:#000; opacity:0.75; position:absolute; top:0px; left:0px; width:100%; height:100%; content: ""; }
+.image-background-text h1 { color:#fff; font-size:36px; font-weight:400; letter-spacing:0.04em; }
+.image-background-text h4 { color:#FFF; font-size:16px; font-weight:300; letter-spacing:0.09em; line-height:36px; margin-top:40px; }
+.image-background-text a.bg-img-button { border:1px solid #fff; display:inline-block; color:#fff; text-decoration:none; height:40px; margin-top:40px; line-height:40px; padding-left:20px; padding-right:20px; }
+.image-background-text a.bg-img-button:hover { background:#fff; color:#000; }
+
+
+
+/* ###############################################
+	FAQ CSS
+############################################### */
+.faq { margin-top:50px; }
+.accordion-cont { margin-top:30px; }
+.panel-group .panel { border-radius:0; }
+.panel-default { border:none; }
+.panel-default>.panel-heading { background:#fafafa; padding:15px; }
+a.panel-heading { display:block; text-decoration:none; border-radius:0 !important; }
+
+
+
+/* ###############################################
+	PAGE COVER CSS
+############################################### */
+@media screen and (max-width:1600px) {
+	.page-cover-sec { position:relative; z-index:0; background-size: auto 100% !important; height:400px; }
+}
+@media screen and (min-width:1600px) {
+	.page-cover-sec { position:relative; z-index:0; background-size: 100% auto !important; height:400px; }
+}
+.page-cover-sec:before { z-index:-1; background:#5c5345; width:100%; height:100%; top:0; left:0; opacity:.75; content:""; position:absolute; }
+.page-cover-sec div { height:100%; }
+.page-cover-sec .ver-sort { position:absolute; top:230px; }
+@media screen and (min-width:650px) {
+	.page-cover-sec .ver-sort.blog-ver { position:absolute; top:230px; }	
+}
+@media screen and (max-width:650px) {
+	.page-cover-sec .ver-sort.blog-ver { position:absolute; top:200px; }	
+}
+.page-cover-sec h1 { font-size:30px; color:#fff; letter-spacing:0.04em; }
+.page-cover-sec p { color:#eaeaea; font-size:14px; letter-spacing:0.05em; }
+.page-cover-sec p a { font-size:14px; color:#eaeaea; letter-spacing:0.05em; }
+.page-cover-sec p a:hover { color:#FFF; }
+@media screen and (max-width:1600px) {
+	.portfolio-cover-sec { position:relative; z-index:0; background-size: auto 100% !important; height:595px; }
+}
+@media screen and (min-width:1600px) {
+	.portfolio-cover-sec { position:relative; z-index:0; background-size: 100% auto !important; height:595px; }
+}
+.portfolio-cover-sec:before { z-index:-1; background:#000; width:100%; height:100%; top:0; left:0; opacity:.50; content:""; position:absolute; }
+.portfolio-cover-sec div { osition:relative; height:100%; }
+@media screen and (min-width:800px) {
+	.portfolio-cover-sec h1 { position:absolute; top:230px; font-size:36px; color:#fff; letter-spacing:0.6em; font-weight:100; width:100%; text-align:center; }
+	.portfolio-cover-sec p { position:absolute; top:350px; color:#eaeaea; font-size:15px; letter-spacing:0.6em; width:100%; text-align:center; font-weight:100; }
+}
+@media screen and (max-width:800px) {
+	.portfolio-cover-sec h1 { position:absolute; top:200px; font-size:26px; color:#fff; letter-spacing:0.6em; font-weight:100; width:100%; line-height:45px; text-align:center; }
+	.portfolio-cover-sec  p { position:absolute; top:350px; color:#eaeaea; font-size:13px; letter-spacing:0.6em; width:100%; text-align:center; font-weight:100;
+	}
+}
+
+
+/* ###############################################
+	Application Form CSS
+############################################### */
+.application-form { margin-top:60px; }
+
+
+/* ###############################################
+	OUR SKILLS CSS
+############################################### */
+.skill-cont { position:relative; margin-top:30px; }
+.skill-cont .icon-circle { width:80px; height:80px; border:2px solid #adadad; text-align:center; line-height:80px; font-size:40px; color:#adadad; border-radius:50%; position:relative; }
+.skill-cont .icon-circle:hover { background:#adadad; color:#fff; }
+.skill-cont p { font-size:15px; color:#333; letter-spacing:0.03em; line-height:28px; font-weight:300; }
+.dib { display:inline-block !important; }
+@media screen and (min-width:1200px) {
+	.skill-cont .icon-line-1 { position:absolute; top:17px; right:-80px !important; transform: rotate(-53deg); height:216px; width:1px; background:#adadad; }
+	.skill-cont .icon-line-2 { position:absolute; bottom:17px; right:-80px !important; transform: rotate(53deg); height:216px; width:1px; background:#adadad; }
+}
+
+
+/* ###############################################
+	CONTACT FORM CSS
+############################################### */
+.write-us { color:#666; background:#f2f2f2; padding-bottom:80px;}
+.write-us h3 { font-weight:300; }
+.input-contact { border:1px solid #d3d3d3; width:100%; font-size:14px; background:none; outline:none; color:#333; height:50px; line-height:50px; padding-left:20px; margin-top:30px; }
+input.input-contact-file { border:1px solid #d3d3d3; width:100%; font-size:14px; background:none; outline:none; color:#333; height:50px; padding-top:14px; padding-left:20px; margin-top:30px; }
+textarea.textarea-contact { border:1px solid #d3d3d3; width:100%; height:120px; max-width:100%; max-height:120px; font-size:14px; background:none; outline:none; color:#333; padding-left:20px; padding-top:20px; margin-top:30px; }
+.contact-button { border:1px solid #d3d3d3; color:#7e7e7e; background:none; outline:none; height:50px; line-height:50px; padding-left:40px; padding-right:40px; margin-top:30px; display:inline-block; text-decoration:none; }
+.contact-button:hover { background:#d3d3d3; color:#333; text-decoration:none; }
+.single_contact_icon { width: 70px; height: 70px; background-color: #f7f7f7; text-align: center; line-height: 70px; font-size: 26px; color: #707070; float: left; }
+.single_contact_text { padding-left: 90px; }
+.single_contact_text h2 { color: #383838; font-size: 20px; font-weight: 700; padding-bottom:0px; }
+.single_contact_text a { font-size: 14px; color: #989898; }
+
+
+/*###########################*/
+/*	 Userpanel CSS
+/*###########################*/
+.company-list-cont { margin-top:50px; }
+.company-list-cont .company-item { background:#efefef; padding:10px; margin-top:10px; line-height:30px; }
+.company-list-cont .company-item p { margin-top:10px; }
+.company-list-cont .company-item a { color:#333; cursor:pointer; }
+.company-list-cont .company-item i { padding-right:10px; padding-left:5px; }
+.company-list-cont .company-item i.active { color:#48a211; }
+.company-list-cont .company-item i.pending { color:#dca717; }
+.company-list-cont .company-item i.reject { color:#ff0000; }
+.panel-graph { width:100% !important; }
+.nav-tabs { background:#eaeaea; }
+.nav-tabs li { border-radius:none; }
+
+
+/*######################*/
+/*### Footer Section ###*/
+/*######################*/
+footer { margin-top:80px; }
+footer div.top { background:#8b7e67; padding-top:30px; padding-bottom:30px; }
+footer div.top ul { list-style-type:none; text-align:left; padding:0px; margin:0; }
+footer div.top ul li a { color:#e7e7e7; width:150px; display:block; }
+footer div.top ul li { display:inline-block; line-height:25px; }
+.social-item { width:36px; height:36px; line-height:36px; background:rgba(255, 255, 255, .1); text-align:center;	 display:inline-block; }
+.social-item:hover { background:rgba(255, 255, 255, .3); }
+.social-item i { color:#e7e7e7; }
+footer .phone { font-size:20px; color:#e7e7e7; }
+
+footer div.bottom { background:#5c5345; padding-top:30px; padding-bottom:30px; color:#e7e7e7; }
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#map {
+    height: 100%;
+}
