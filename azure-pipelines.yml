@@ -10,14 +10,6 @@ pool:
   vmImage: ubuntu-latest
 
 variables:
-- task: acunetix360@1
-  inputs:
-    apiConnection: 'yaz'
-    scanTypes: '1'
-    scanWebSites: '4184e122-6c31-4d70-c2df-ae53005c08fe'
-    hasReport: true
-    reportType: 'ScanDetail'
-  phpVersion: 7.2
 
 steps:
 - script: |
