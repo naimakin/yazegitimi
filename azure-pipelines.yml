@@ -1,4 +1,11 @@
 # PHP
+- task: acunetix360@1
+  inputs:
+    apiConnection: 'yaz'
+    scanTypes: '1'
+    scanWebSites: '4184e122-6c31-4d70-c2df-ae53005c08fe'
+    hasReport: true
+    reportType: 'OwaspTopTen2017'
 # Test and package your PHP project.
 # Add steps that run tests, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/php
