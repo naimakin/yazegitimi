@@ -9,8 +9,6 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
-variables:
-
 steps:
 - script: |
     sudo update-alternatives --set php /usr/bin/php$(phpVersion)
